@@ -1,10 +1,14 @@
 # RSS-SteamToDiscord
 
-This project runs a simple powershell script to pull and parse RSS data from the Steam News Hub  
-and posts then to discord channels via webhooks.  
+This project runs a simple powershell script to pull and parse RSS data from the Steam News Hub and posts then to discord channels via webhooks.  
+
 The script runs every 5 minutes.  
+
 You can run this with docker or you can find the .ps1 in the "Build" folder.  
+
 The docker image is a linux base running powershell core (mcr.microsoft.com/powershell:latest)
+
+![Screenshot](/Build/img/Screenshot_20240914_224514.png)
 
 # Instructions for docker
 
