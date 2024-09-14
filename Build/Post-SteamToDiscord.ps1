@@ -37,11 +37,6 @@ function Get-SteamRSS {
 }
 
 
-# Ensure the Feeds folder exists
-if ($(Test-Path -Path "./Feeds") -eq $false) {
-    New-Item -ItemType Directory -Path "./Feeds"
-}
-
 # Import the CSV file containing feed settings from the Feeds folder
 $Feeds = Import-Csv -Path ./Feeds/FeedSettings.csv -Delimiter ";"
 
