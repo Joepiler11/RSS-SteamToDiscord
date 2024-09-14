@@ -6,7 +6,9 @@ The script runs every 5 minutes.
 
 You can run this with docker or you can find the .ps1 in the "Build" folder.  
 
-The docker image is a linux base running powershell core (mcr.microsoft.com/powershell:latest)
+The docker image is a linux base running powershell core (mcr.microsoft.com/powershell:latest)  
+
+* May work with other RSS feeds but not guaranteed.
 
 ![Screenshot](/Build/img/Screenshot_20240914_224514.png)
 
