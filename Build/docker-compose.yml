@@ -1,6 +1,6 @@
 services:
-  steam2discord:
-    build: .
+  steamtodiscord:
+    build: . # Build the docker image locally
     volumes:
       - ./Feeds/FeedSettings.csv:/scripts/Feeds/FeedSettings.csv  # Mount FeedSettings.csv to the correct location
       - ./Feeds:/scripts/Feeds  # Persist the Feeds directory outside the container
