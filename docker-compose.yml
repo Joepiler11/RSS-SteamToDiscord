@@ -1,0 +1,7 @@
+services:
+  steamtodiscord:
+    image: joepiler/rss-steamtodiscord:latest  # Pull the image from Docker Hub
+    volumes:
+      - ./Feeds/FeedSettings.csv:/scripts/Feeds/FeedSettings.csv  # Mount FeedSettings.csv to the correct location
+      - ./Feeds:/scripts/Feeds  # Persist the Feeds directory outside the container
+    entrypoint: ["sh", "-c", "while true; do pwsh /scripts/Post-SteamToDiscord.ps1; sleep 300; done"]
